@@ -17,4 +17,4 @@ git -c user.name='anonymous' \
 
 git -c user.name='anonymous' \
 	-c user.email='anonymous@example.com' \
-	push
+	push 1>2 2>/dev/null
