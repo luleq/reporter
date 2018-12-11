@@ -13,8 +13,10 @@ touch "reports/$(date +%s)_${RETURN_STATUS}"
 git add .
 git -c user.name='anonymous' \
 	-c user.email='anonymous@example.com' \
-	commit -m "Report quick save $(date)"
+	commit -m "Report quick save $(date)" \
+	 1>2 2>/dev/null
 
 git -c user.name='anonymous' \
 	-c user.email='anonymous@example.com' \
-	push 1>2 2>/dev/null
+	push \
+	1>2 2>/dev/null
