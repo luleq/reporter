@@ -4,7 +4,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 cd $DIR
 
-ping github.com -c 1
+ping github.com -c 1 > /dev/null
 
 readonly RETURN_STATUS=$?
 
