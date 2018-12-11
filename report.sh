@@ -15,4 +15,6 @@ git -c user.name='anonymous' \
 	-c user.email='anonymous@example.com' \
 	commit -m "Report quick save $(date)"
 
-# git push
+git -c user.name='anonymous' \
+	-c user.email='anonymous@example.com' \
+	push
